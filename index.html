@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>사고독서 리세움 | 초·중등 사고문해력 교육원</title>
+<meta name="description" content="책은 읽는데 시험에서 무너지는 아이를 위한 사고문해력 훈련. 30년 경력 원장이 직접 가르치는 리세움 1기 모집." />
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Noto Sans KR',sans-serif;
+  color:#1f2a20;background:#fbfaf6;
+  line-height:1.95;letter-spacing:-0.2px;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:'Gowun Batang',serif;line-height:1.5;letter-spacing:-0.5px;font-weight:700}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+ul{list-style:none}
+
+:root{
+  --green-darkest:#162b18;
+  --green-dark:#1f3520;
+  --green:#2c4a2d;
+  --green-mid:#3d5a3e;
+  --green-soft:#6b8e5a;
+
+  --leaf:#d4e3a8;
+  --leaf-soft:#e8efd9;
+  --leaf-bg:#eaf1d6;
+
+  --cream:#fbfaf6;
+  --cream-mid:#f5f1e6;
+  --cream-deep:#efe9d8;
+
+  --gold:#b89968;
+  --gold-light:#d4af6a;
+  --gold-dark:#8a6f3d;
+
+  --line:#e0ddd3;
+  --ink:#1f2a20;
+  --ink-soft:#5a6657;
+}
+
+.container{max-width:1140px;margin:0 auto;padding:0 28px;position:relative;z-index:2}
+.container-narrow{max-width:880px;margin:0 auto;padding:0 28px;position:relative;z-index:2}
+section{padding:130px 0;position:relative;overflow:hidden}
+
+.section-label{
+  display:inline-block;
+  font-family:'Playfair Display',serif;
+  font-size:12px;letter-spacing:6px;font-weight:700;
+  margin-bottom:24px;text-transform:uppercase;
+  padding:8px 22px;border-radius:30px;
+  background:var(--leaf-soft);color:var(--green);
+}
+.section-label.on-dark{background:rgba(212,227,168,0.18);color:var(--leaf)}
+.section-title{font-size:42px;margin-bottom:24px;line-height:1.45;color:var(--green-dark)}
+.section-title.on-dark{color:#fff}
+.section-title .ac{
+  color:var(--green-dark);position:relative;display:inline-block;z-index:1;font-weight:900;
+}
+.section-title .ac::before{
+  content:'';position:absolute;left:-4px;right:-4px;bottom:4px;
+  height:42%;background:var(--leaf);opacity:0.6;z-index:-1;border-radius:3px;
+}
+.section-title.on-dark .ac{color:var(--leaf)}
+.section-title.on-dark .ac::before{display:none}
+
+.section-subtitle{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:18px;
+  color:var(--gold);
+  margin-top:-8px;
+  margin-bottom:20px;
+  letter-spacing:0.5px;
+}
+
+.section-desc{font-size:17px;color:var(--ink-soft);margin:0 auto 56px;max-width:740px;line-height:2;text-align:center}
+.section-desc.on-dark{color:var(--leaf-soft)}
+.section-desc strong{color:var(--green);font-weight:700}
+.section-desc.on-dark strong{color:#fff}
+
+.ornament{display:flex;align-items:center;gap:14px;margin:0 auto 44px;width:fit-content}
+.ornament span:first-child,.ornament span:last-child{width:50px;height:1.5px;background:var(--gold);opacity:0.9}
+.ornament .dot{width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.ornament.on-dark span:first-child,.ornament.on-dark span:last-child{background:var(--leaf);opacity:0.7}
+.ornament.on-dark .dot{background:var(--leaf)}
+
+.center{text-align:center}
+
+.u-card{
+  background:#fff;
+  border-radius:16px;
+  border:1px solid var(--line);
+  border-top:4px solid var(--green-soft);
+  padding:32px 28px;
+  box-shadow:0 6px 18px rgba(31,53,32,0.06);
+  transition:all .3s ease;
+}
+.u-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 18px 36px rgba(31,53,32,0.12);
+  border-top-color:var(--green);
+}
+.u-card--gold{border-top-color:var(--gold)}
+.u-card--gold:hover{border-top-color:var(--gold-dark)}
+
+header{
+  position:fixed;top:0;left:0;right:0;
+  background:rgba(251,250,246,0.96);
+  backdrop-filter:blur(14px);z-index:1000;
+  border-bottom:1px solid var(--line);
+  transition:box-shadow .3s;
+}
+header.scrolled{box-shadow:0 2px 20px rgba(31,53,32,0.07)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;max-width:1300px;margin:0 auto}
+.logo{font-family:'Gowun Batang',serif;font-size:22px;font-weight:700;color:var(--green)}
+.logo .en{
+  font-family:'Cormorant Garamond',serif;color:var(--green-soft);
+  font-weight:400;font-style:italic;
+  font-size:13px;margin-left:10px;letter-spacing:3px;
+}
+.nav-menu{display:flex;gap:34px}
+.nav-menu a{font-size:14.5px;color:var(--green);font-weight:500;transition:color .2s;position:relative}
+.nav-menu a:hover{color:var(--green-soft)}
+.nav-menu a::after{
+  content:'';position:absolute;left:0;right:0;bottom:-6px;height:1px;
+  background:var(--green-soft);transform:scaleX(0);transition:transform .25s;
+}
+.nav-menu a:hover::after{transform:scaleX(1)}
+.nav-cta{
+  background:var(--green);color:#fff !important;
+  padding:11px 24px;border-radius:30px;
+  font-size:13.5px;font-weight:700;transition:all .25s;
+  letter-spacing:0.5px;
+}
+.nav-cta:hover{background:var(--green-dark);transform:translateY(-1px);box-shadow:0 8px 20px rgba(44,74,45,0.28)}
+.burger{display:none;font-size:26px;color:var(--green);background:none;border:0;cursor:pointer}
+
+/* HERO */
+.hero{
+  background:
+    radial-gradient(ellipse at top right,rgba(212,227,168,0.18) 0%,transparent 50%),
+    radial-gradient(ellipse at bottom left,rgba(122,155,106,0.22) 0%,transparent 50%),
+    linear-gradient(135deg,var(--green-darkest) 0%,var(--green) 50%,var(--green-mid) 100%);
+  color:#fff;
+  padding:170px 0 130px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+.hero-inner{max-width:760px;margin:0 auto;position:relative;z-index:3}
+.hero-eyebrow{
+  font-family:'Playfair Display',serif;
+  font-size:13px;letter-spacing:7px;font-weight:500;
+  color:var(--leaf);text-transform:uppercase;
+  margin-bottom:30px;
+}
+.hero-title{
+  font-size:clamp(32px,4.5vw,52px);
+  line-height:1.45;color:#fff;
+  margin-bottom:36px;font-weight:700;letter-spacing:-1px;
+}
+.hero-title .accent{color:var(--leaf);position:relative;display:inline-block}
+.hero-title .accent::after{
+  content:'';position:absolute;left:0;right:0;bottom:-4px;height:4px;
+  background:var(--leaf);border-radius:3px;opacity:0.7;
+}
+.hero-sub{
+  font-size:18px;line-height:2;color:var(--leaf-soft);
+  margin-bottom:50px;font-weight:300;
+}
+.hero-sub strong{color:#fff;font-weight:700}
+.hero-card{
+  position:relative;
+  background:#fff;
+  border-radius:14px;
+  padding:54px 50px;
+  margin:0 auto 50px;
+  max-width:600px;
+  box-shadow:0 30px 60px rgba(0,0,0,0.35),0 12px 24px rgba(0,0,0,0.2);
+  transition:transform .4s ease, box-shadow .4s ease;
+}
+.hero-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 40px 70px rgba(0,0,0,0.4),0 16px 30px rgba(0,0,0,0.25);
+}
+.hero-card::before{
+  content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);
+  width:80px;height:4px;
+  background:linear-gradient(90deg,transparent 0%,var(--gold) 50%,transparent 100%);
+  border-radius:0 0 4px 4px;
+}
+.hero-card::after{
+  content:'';position:absolute;
+  top:14px;left:14px;right:-14px;bottom:-14px;
+  background:rgba(212,227,168,0.18);
+  border-radius:14px;z-index:-1;
+}
+.hero-card-brand{
+  font-family:'Gowun Batang',serif;
+  font-size:clamp(34px,4vw,42px);
+  font-weight:700;
+  color:var(--green-dark);
+  margin-bottom:18px;
+  letter-spacing:-1px;
+  line-height:1.3;
+}
+.hero-card-divider{display:flex;justify-content:center;align-items:center;gap:10px;margin-bottom:18px}
+.hero-card-divider span{width:50px;height:1px;background:var(--gold);opacity:0.7}
+.hero-card-divider .dot{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.hero-card-sub{
+  font-family:'Gowun Batang',serif;
+  font-size:clamp(19px,2vw,22px);
+  color:var(--green);
+  margin-bottom:14px;
+  font-weight:700;
+  letter-spacing:-0.5px;
+}
+.hero-card-desc{font-size:15px;color:var(--ink-soft);line-height:1.85}
+.hero-badge{
+  display:inline-block;
+  background:rgba(212,227,168,0.15);
+  color:var(--leaf);
+  border:1px solid rgba(212,227,168,0.4);
+  padding:11px 24px;border-radius:30px;
+  font-size:13.5px;font-weight:500;
+  letter-spacing:0.5px;margin-bottom:30px;
+  backdrop-filter:blur(8px);
+}
+.hero-cta{
+  display:inline-flex;align-items:center;gap:14px;
+  background:var(--leaf);color:var(--green-dark);
+  padding:18px 40px;border-radius:50px;
+  font-size:16px;font-weight:700;transition:all .3s;
+  letter-spacing:0.5px;
+  box-shadow:0 14px 32px rgba(0,0,0,0.3);
+}
+.hero-cta:hover{
+  background:#fff;color:var(--green-dark);
+  transform:translateY(-3px);box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+.hero-cta .arrow{transition:transform .3s}
+.hero-cta:hover .arrow{transform:translateX(6px)}
+.hero-meta{
+  margin-top:30px;display:flex;justify-content:center;
+  gap:28px;flex-wrap:wrap;
+  font-size:13.5px;color:var(--leaf-soft);
+}
+.hero-meta span{display:flex;align-items:center;gap:8px}
+.hero-meta .dot{width:4px;height:4px;border-radius:50%;background:var(--leaf)}
+
+/* EMPATHY */
+.empathy{background:var(--cream-mid)}
+.empathy-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:18px;margin-bottom:50px;
+}
+.empathy-card{
+  display:flex;gap:16px;align-items:flex-start;
+  padding:26px 24px;
+}
+.empathy-check{
+  flex:0 0 30px;height:30px;border-radius:50%;
+  background:var(--green);color:var(--leaf);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:14px;
+  box-shadow:0 2px 6px rgba(31,53,32,0.2);
+}
+.empathy-text{font-size:15.5px;line-height:1.8;color:var(--ink)}
+.empathy-text strong{color:var(--green);font-weight:700}
+.empathy-conclude{
+  padding:38px 32px;border-radius:18px;
+  background:linear-gradient(135deg,var(--green) 0%,var(--green-mid) 100%);
+  color:#fff;text-align:center;
+  box-shadow:0 14px 32px rgba(31,53,32,0.18);
+}
+.empathy-conclude p{font-size:18px;line-height:1.9}
+.empathy-conclude strong{color:var(--leaf);font-weight:700}
+
+/* SOLUTION */
+.solution{background:#fff}
+.sol-quote{
+  font-family:'Gowun Batang',serif;font-size:24px;line-height:1.8;
+  color:var(--green-dark);text-align:center;margin:0 auto 60px;
+  max-width:780px;font-weight:700;
+}
+.sol-quote .em{color:var(--green-soft)}
+.sol-flow{
+  display:grid;grid-template-columns:1fr auto 1fr auto 1fr;
+  gap:20px;align-items:stretch;
+}
+.sol-step{text-align:center;padding:36px 26px}
+.sol-step .num{
+  font-family:'Playfair Display',serif;font-style:italic;
+  color:var(--gold);font-size:22px;margin-bottom:14px;font-weight:700;
+}
+.sol-step h3{font-size:21px;color:var(--green-dark);margin-bottom:14px}
+.sol-step p{font-size:15px;color:var(--ink-soft);line-height:1.9}
+.sol-arrow{
+  display:flex;align-items:center;justify-content:center;
+  color:var(--gold);font-size:24px;font-weight:700;
+}
+
+/* PROGRAM */
+.program{
+  background:
+    radial-gradient(ellipse at top right,rgba(212,227,168,0.12) 0%,transparent 60%),
+    linear-gradient(135deg,var(--green-darkest) 0%,var(--green) 100%);
+  color:#fff;
+}
+.prog-weeks{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;margin-bottom:50px;
+}
+.prog-week{
+  padding:32px 24px;
+  text-align:left;
+  background:#fff !important;
+}
+.prog-week .tag{
+  display:inline-block;
+  font-family:'Playfair Display',serif;
+  font-size:11.5px;letter-spacing:3px;
+  color:var(--green);margin-bottom:14px;font-weight:700;
+}
+.prog-week.apply .tag{color:var(--gold-dark)}
+.prog-week h4{font-size:19px;color:var(--green-dark) !important;margin-bottom:12px;line-height:1.5}
+.prog-week p{font-size:14.5px;color:var(--ink-soft) !important;line-height:1.85}
+.prog-meta{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:16px;
+  padding-top:40px;
+  border-top:1px dashed rgba(212,227,168,0.25);
+}
+.prog-meta-card{
+  background:rgba(255,255,255,0.06);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(212,227,168,0.25);
+  border-radius:14px;
+  padding:24px 18px;
+  text-align:center;
+  transition:all .25s;
+}
+.prog-meta-card:hover{
+  background:rgba(212,227,168,0.14);
+  border-color:rgba(212,227,168,0.5);
+  transform:translateY(-3px);
+}
+.prog-meta-card .ico{font-size:26px;margin-bottom:10px}
+.prog-meta-card .lab{
+  font-family:'Playfair Display',serif;
+  font-size:12px;color:var(--leaf);
+  letter-spacing:2px;font-weight:700;margin-bottom:8px;
+}
+.prog-meta-card .val{
+  font-size:15px;color:#fff;font-weight:700;line-height:1.6;
+  font-family:'Gowun Batang',serif;
+}
+
+/* SEVEN */
+.seven{background:linear-gradient(180deg,var(--leaf-bg) 0%,#dfe8c8 100%)}
+.seven-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:24px;margin-bottom:36px;
+}
+.seven-circle{text-align:center;padding:32px 22px}
+.stp-num{
+  width:50px;height:50px;border-radius:50%;
+  background:var(--green);color:var(--leaf);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Playfair Display',serif;font-weight:700;font-size:18px;
+  margin:0 auto 16px;
+}
+.seven-circle h4{font-size:18px;color:var(--green-dark);margin-bottom:12px}
+.seven-circle p{font-size:14px;color:var(--ink-soft);line-height:1.8;min-height:65px}
+.stp-result{
+  margin-top:16px;padding-top:14px;
+  border-top:1px dashed rgba(184,153,104,0.4);
+  font-size:14px;color:var(--gold-dark);font-weight:700;
+  font-family:'Gowun Batang',serif;letter-spacing:0.3px;
+}
+.seven-bonus{
+  background:linear-gradient(135deg,#f5d488 0%,#d4af6a 30%,#b8924a 60%,#d4af6a 85%,#e8c378 100%);
+  color:#fff;border-radius:18px;
+  padding:36px;text-align:center;
+  position:relative;overflow:hidden;
+  box-shadow:0 18px 40px rgba(180,140,60,0.35),0 0 0 1px rgba(255,255,255,0.2) inset;
+}
+.seven-bonus::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.6),transparent);
+}
+.seven-bonus::after{
+  content:'';position:absolute;top:-50px;right:-50px;
+  width:200px;height:200px;
+  background:radial-gradient(circle,rgba(255,255,255,0.35) 0%,transparent 70%);
+  border-radius:50%;pointer-events:none;
+}
+.seven-bonus .lab{
+  font-family:'Playfair Display',serif;font-style:italic;
+  font-size:13px;letter-spacing:4px;margin-bottom:8px;
+  color:#fff;text-shadow:0 1px 2px rgba(120,80,20,0.4);
+  position:relative;z-index:1;
+}
+.seven-bonus h3{
+  font-size:24px;margin-bottom:10px;color:#fff;
+  text-shadow:0 2px 4px rgba(120,80,20,0.5);position:relative;z-index:1;
+}
+.seven-bonus p{font-size:15px;color:#fffaf0;position:relative;z-index:1}
+
+/* DIFFER */
+.differ{background:var(--green);color:#fff;padding:130px 0}
+.differ-conclude{
+  position:relative;
+  margin:50px auto 60px;
+  max-width:820px;
+  padding:36px 40px 36px 48px;
+  background:linear-gradient(135deg,rgba(245,212,136,0.12) 0%,rgba(212,175,106,0.08) 100%);
+  border-radius:14px;
+  border:1px solid rgba(245,212,136,0.25);
+  box-shadow:0 12px 32px rgba(0,0,0,0.2);
+}
+.differ-conclude::before{
+  content:'';
+  position:absolute;
+  left:0;top:0;bottom:0;
+  width:5px;
+  background:linear-gradient(180deg,#f5d488 0%,#d4af6a 50%,#b8924a 100%);
+  border-radius:14px 0 0 14px;
+}
+.differ-conclude-label{
+  display:inline-block;
+  font-family:'Playfair Display',serif;
+  font-style:italic;
+  font-size:12px;
+  letter-spacing:4px;
+  color:#f5d488;
+  margin-bottom:14px;
+  text-transform:uppercase;
+}
+.differ-conclude p{
+  font-family:'Gowun Batang',serif;
+  font-size:17px;
+  line-height:2.05;
+  color:#fff;
+  margin:0;
+}
+.differ-conclude strong{
+  color:#f5d488;
+  font-weight:700;
+}
+.differ-conclude .keywords{
+  display:block;
+  margin:10px 0;
+  color:var(--leaf);
+  font-weight:700;
+}
+.differ-quote{
+  font-family:'Gowun Batang',serif;
+  font-size:22px;line-height:1.85;
+  text-align:center;margin:0 auto 50px;
+  max-width:760px;color:#fff;
+  padding:34px 28px;
+  background:rgba(212,227,168,0.08);
+  border-radius:16px;
+  border:1px solid rgba(212,227,168,0.15);
+}
+.differ-quote strong{color:var(--leaf);font-weight:700}
+.differ-story{
+  background:#fff;
+  border-radius:16px;
+  border-top:4px solid var(--gold);
+  padding:38px 36px;
+  margin-bottom:60px;
+  font-size:16px;line-height:2;color:var(--ink);
+  box-shadow:0 14px 32px rgba(0,0,0,0.25);
+}
+.differ-story strong{color:var(--green-dark);font-weight:700}
+.differ-mini-title{color:#fff;text-align:center;font-size:22px;margin-bottom:8px;font-family:'Gowun Batang',serif}
+.differ-mini-desc{text-align:center;color:var(--leaf-soft);margin-bottom:28px;font-size:14.5px}
+.differ-skills{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:14px;
+}
+.differ-skill{
+  background:#fbfaf6;
+  border:1px solid rgba(255,255,255,0.1);
+  padding:18px 20px;border-radius:12px;
+  display:flex;align-items:center;gap:14px;
+  transition:all .25s;
+  box-shadow:0 4px 14px rgba(0,0,0,0.18);
+}
+.differ-skill:hover{background:#fff;transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,0.25)}
+.differ-skill .ico{
+  width:36px;height:36px;border-radius:50%;
+  background:var(--green);color:var(--leaf);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:14px;flex-shrink:0;
+  font-family:'Playfair Display',serif;
+}
+.differ-skill .txt{font-size:15px;font-weight:500;color:var(--green-dark)}
+.differ-skill.highlight{
+  background:linear-gradient(135deg,#f5d488 0%,#d4af6a 100%);
+  border-color:rgba(255,255,255,0.3);
+  box-shadow:0 6px 20px rgba(180,140,60,0.4);
+}
+.differ-skill.highlight .ico{background:#fff;color:var(--gold-dark)}
+.differ-skill.highlight .txt{color:#fff;font-weight:700;text-shadow:0 1px 2px rgba(120,80,20,0.3)}
+
+/* PHILO */
+.philo{background:#fff}
+.philo-lead{
+  font-size:17px;line-height:2;color:var(--ink);
+  margin:0 auto 24px;max-width:780px;text-align:center;
+}
+.philo-lead strong{color:var(--green-dark)}
+.philo-lead em{color:var(--green-soft);font-style:italic;font-family:'Cormorant Garamond',serif;font-weight:500}
+.philo-body{
+  font-size:15.5px;line-height:2;color:var(--ink-soft);
+  max-width:780px;margin:0 auto 60px;text-align:center;
+  padding-bottom:50px;
+  border-bottom:1px dashed var(--line);
+}
+.philo-body strong{color:var(--green)}
+.philo-pillars{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+.pillar{text-align:center;padding:30px 22px}
+.pillar-icon{
+  width:64px;height:64px;border-radius:50%;
+  background:linear-gradient(135deg,var(--leaf-soft) 0%,var(--leaf) 100%);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 16px;font-size:28px;
+  box-shadow:0 6px 16px rgba(122,155,106,0.25);
+}
+.pl-num{
+  font-family:'Playfair Display',serif;font-style:italic;
+  font-size:13px;color:var(--gold);letter-spacing:2px;
+  margin-bottom:8px;
+}
+.pillar h4{font-size:18px;color:var(--green-dark);margin-bottom:10px}
+.pillar p{font-size:14px;color:var(--ink-soft);line-height:1.75}
+
+/* FOUNDER */
+.founder{background:var(--leaf-bg)}
+.dr-card{text-align:center;margin:0 auto 40px}
+.dr-photo{
+  width:140px;height:140px;border-radius:50%;
+  background:linear-gradient(135deg,var(--green) 0%,var(--green-mid) 100%);
+  color:var(--leaf);font-family:'Gowun Batang',serif;
+  font-size:62px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 18px;box-shadow:0 12px 30px rgba(31,53,32,0.18);
+}
+.dr-name{font-family:'Gowun Batang',serif;font-size:24px;color:var(--green-dark);font-weight:700}
+.dr-alias{font-size:14px;color:var(--gold);margin-top:4px;font-style:italic;font-family:'Cormorant Garamond',serif}
+.dr-quote{
+  text-align:center;font-family:'Gowun Batang',serif;
+  font-size:21px;line-height:1.85;color:var(--green-dark);
+  padding:38px 32px;margin:0 auto 60px;max-width:820px;
+  position:relative;
+  background:#fff;
+}
+.dr-quote::before{
+  content:'"';position:absolute;top:8px;left:24px;
+  font-family:'Playfair Display',serif;color:var(--gold);
+  font-size:46px;font-weight:700;opacity:0.5;
+}
+.dr-quote strong{color:var(--green)}
+.dr-body{max-width:820px;margin:0 auto 50px}
+.dr-body h3{font-size:20px;color:var(--green-dark);margin:32px 0 14px;padding-left:14px;border-left:3px solid var(--green-soft);font-family:'Gowun Batang',serif}
+.dr-body p{font-size:15.5px;line-height:2;color:var(--ink-soft);margin-bottom:14px}
+.dr-body p strong{color:var(--green-dark)}
+.dr-mini-quote{
+  text-align:center;font-family:'Gowun Batang',serif;
+  font-size:18px;color:var(--green);font-weight:700;
+  padding:22px;margin:22px 0;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.tl-section-title{
+  text-align:center;font-size:22px;color:var(--green-dark);
+  margin:60px 0 30px;font-family:'Gowun Batang',serif;
+}
+.timeline{
+  margin:0 auto 60px;max-width:820px;position:relative;background:#fff;border-radius:16px;
+  padding:30px 36px;border-top:4px solid var(--green-soft);box-shadow:0 6px 18px rgba(31,53,32,0.06)
+}
+.timeline::before{
+  content:'';position:absolute;
+  left:96px;top:60px;bottom:60px;
+  width:1px;background:rgba(184,153,104,0.4);
+}
+.tl-item{
+  display:flex;gap:30px;align-items:flex-start;
+  padding:18px 0;position:relative;
+}
+.tl-year{
+  flex:0 0 100px;
+  font-family:'Playfair Display',serif;
+  font-size:36px;font-weight:700;color:var(--green-soft);
+  line-height:1;text-align:left;
+  position:relative;z-index:2;
+  background:#fff;padding-right:16px;
+}
+.tl-year small{font-size:14px;font-weight:400;margin-left:4px;color:var(--ink-soft);font-family:'Gowun Batang',serif}
+.tl-body{flex:1;padding-top:6px}
+.tl-body h4{font-size:18px;color:var(--green-dark);margin-bottom:6px}
+.tl-body p{font-size:14.5px;color:var(--ink-soft);line-height:1.85}
+.tl-item.highlight .tl-year{color:var(--gold-dark)}
+.tl-item.highlight .tl-body h4{color:var(--gold-dark)}
+.voice-title{font-size:22px;text-align:center;color:var(--green-dark);margin:60px 0 24px;font-family:'Gowun Batang',serif}
+.voices{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-bottom:60px}
+.voice-card{padding:28px 24px;position:relative}
+.voice-card::before{
+  content:'"';position:absolute;top:6px;right:18px;
+  font-family:'Playfair Display',serif;font-size:42px;font-weight:700;
+  color:var(--leaf);opacity:0.7;
+}
+.voice-text{font-size:15px;line-height:1.85;color:var(--green-dark);margin-bottom:12px;font-family:'Gowun Batang',serif}
+.voice-meta{font-size:13px;color:var(--ink-soft);font-style:italic}
+.cred-title{text-align:center;font-size:22px;color:var(--green-dark);margin:60px 0 24px;font-family:'Gowun Batang',serif}
+.cred{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;max-width:1000px;margin:0 auto;
+}
+.cred-col{padding:28px 24px}
+.cred-h{
+  font-family:'Playfair Display',serif;font-size:12px;
+  letter-spacing:3px;color:var(--gold);margin-bottom:14px;font-weight:700;
+}
+.cred-col ul li{
+  font-size:14px;line-height:1.85;color:var(--ink);
+  padding-left:14px;position:relative;margin-bottom:6px;
+}
+.cred-col ul li::before{content:'·';position:absolute;left:4px;color:var(--green-soft);font-weight:700}
+
+/* LEVEL */
+.level{background:var(--cream-mid)}
+.level-rows{display:flex;flex-direction:column;gap:14px;margin-bottom:50px;max-width:880px;margin-left:auto;margin-right:auto}
+.level-row{
+  display:grid;grid-template-columns:80px 200px 1fr;gap:24px;align-items:center;
+  padding:22px 28px;
+}
+.lv-tag{font-family:'Playfair Display',serif;font-weight:700;font-size:22px;color:var(--gold)}
+.lv-name{font-size:17px;color:var(--green-dark);font-weight:700;font-family:'Gowun Batang',serif}
+.lv-goal{font-size:15px;color:var(--ink-soft);line-height:1.7}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:880px;margin:0 auto 30px}
+.compare-good,.compare-bad{padding:30px 28px}
+.compare-good{border-top-color:var(--green-soft)}
+.compare-bad{border-top-color:var(--gold)}
+.cp-title{font-size:16px;font-weight:700;margin-bottom:14px;color:var(--green-dark);font-family:'Gowun Batang',serif}
+.compare-bad .cp-title{color:var(--gold-dark)}
+.compare-good ul li,.compare-bad ul li{
+  padding-left:18px;position:relative;font-size:14.5px;
+  line-height:1.85;color:var(--ink);margin-bottom:6px;
+}
+.compare-good ul li::before{content:'·';position:absolute;left:6px;color:var(--green-soft);font-weight:700;font-size:18px;top:-3px}
+.compare-bad ul li::before{content:'·';position:absolute;left:6px;color:var(--gold);font-weight:700;font-size:18px;top:-3px}
+.level-note{text-align:center;color:var(--ink-soft);font-size:14.5px;max-width:780px;margin:0 auto}
+.level-note strong{color:var(--green)}
+
+/* FAQ */
+.faq{background:var(--cream)}
+.faq-list{display:flex;flex-direction:column;gap:12px;max-width:880px;margin:0 auto}
+.faq-item{
+  background:#fff;border-radius:14px;
+  border:1px solid var(--line);border-top:3px solid var(--green-soft);
+  overflow:hidden;transition:all .25s;
+}
+.faq-item:hover{border-color:rgba(122,155,106,0.4);box-shadow:0 6px 18px rgba(31,53,32,0.06)}
+.faq-q{
+  width:100%;text-align:left;background:none;border:0;cursor:pointer;
+  padding:22px 26px;font-family:'Gowun Batang',serif;
+  font-size:16.5px;color:var(--green-dark);font-weight:700;
+  display:flex;justify-content:space-between;align-items:center;
+}
+.faq-ico{
+  width:28px;height:28px;border-radius:50%;
+  background:var(--leaf-soft);color:var(--green);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:16px;transition:transform .3s,background .3s;
+  flex-shrink:0;margin-left:14px;
+}
+.faq-item.active .faq-ico{transform:rotate(45deg);background:var(--green);color:var(--leaf)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease;padding:0 26px}
+.faq-item.active .faq-a{max-height:400px;padding-bottom:22px}
+.faq-a p{font-size:15px;line-height:1.9;color:var(--ink-soft)}
+.faq-a p strong{color:var(--green)}
+
+/* APPLY */
+.apply{
+  background:
+    radial-gradient(ellipse at top left,rgba(212,227,168,0.15) 0%,transparent 50%),
+    linear-gradient(135deg,var(--green-darkest) 0%,var(--green) 100%);
+  color:#fff;
+}
+.apply-lead{text-align:center;font-size:17px;line-height:2;color:var(--leaf-soft);margin-bottom:46px;max-width:760px;margin-left:auto;margin-right:auto}
+.apply-lead strong{color:var(--leaf);font-weight:700}
+.process{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:50px}
+.ps{
+  background:rgba(212,227,168,0.12);
+  border:1px solid rgba(212,227,168,0.3);
+  padding:13px 18px;border-radius:30px;font-size:13.5px;color:#fff;
+  display:flex;align-items:center;gap:10px;
+}
+.ps-n{font-family:'Playfair Display',serif;font-style:italic;color:var(--leaf);font-size:12.5px;font-weight:700}
+.ps-arrow{color:var(--leaf);font-size:18px;opacity:0.7}
+.form-box{
+  background:#fff;color:var(--ink);
+  border-radius:20px;padding:46px 40px;
+  max-width:720px;margin:0 auto;
+  box-shadow:0 20px 50px rgba(0,0,0,0.2);
+  border-top:4px solid var(--gold);
+}
+.fg{margin-bottom:22px}
+.fg label{display:block;font-size:14px;color:var(--green-dark);font-weight:700;margin-bottom:8px}
+.req{color:#c84a3a}
+.fg input,.fg select,.fg textarea{
+  width:100%;padding:14px 16px;border:1px solid var(--line);
+  border-radius:10px;font-size:15px;font-family:inherit;
+  background:var(--cream);transition:all .2s;
+}
+.fg input:focus,.fg select:focus,.fg textarea:focus{
+  outline:none;border-color:var(--green);background:#fff;
+  box-shadow:0 0 0 3px rgba(44,74,45,0.1);
+}
+.fg textarea{min-height:110px;resize:vertical}
+.check-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px}
+.ck{display:flex;align-items:center;gap:8px;font-size:14.5px;color:var(--ink);cursor:pointer;padding:6px 0}
+.ck input{width:16px;height:16px;accent-color:var(--green)}
+.privacy{
+  background:var(--cream);padding:18px;border-radius:10px;
+  font-size:13px;color:var(--ink-soft);line-height:1.7;margin-bottom:22px;
+}
+.pt{font-weight:700;color:var(--green-dark);margin-bottom:8px;font-size:14px}
+.submit-btn{
+  width:100%;padding:18px;background:var(--green);color:#fff;
+  border:0;border-radius:30px;font-size:16px;font-weight:700;
+  cursor:pointer;transition:all .25s;letter-spacing:1px;font-family:inherit;
+}
+.submit-btn:hover{background:var(--green-dark);transform:translateY(-2px);box-shadow:0 12px 28px rgba(31,53,32,0.3)}
+
+.book-link{
+  position:relative;
+  color:inherit;
+  text-decoration:none;
+  transition:color .25s ease;
+  padding-right:18px;
+  display:inline;
+}
+.book-link::after{
+  content:'↗';
+  position:absolute;
+  right:0;
+  top:-1px;
+  font-size:11px;
+  color:var(--gold);
+  opacity:0;
+  transform:translateX(-4px);
+  transition:opacity .25s ease, transform .25s ease;
+}
+.book-link:hover{color:var(--gold)}
+.book-link:hover::after{opacity:1;transform:translateX(0)}
+.book-link::before{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:-2px;
+  width:0;
+  height:1px;
+  background:var(--gold);
+  transition:width .3s ease;
+}
+.book-link:hover::before{width:calc(100% - 18px)}
+
+/* CHANNEL LINKS */
+.social-hub{
+  background:linear-gradient(180deg,#eef3df 0%, #f8f6ef 100%);
+  padding:110px 0 90px;
+}
+.social-head{
+  text-align:center;
+  margin-bottom:40px;
+}
+.social-head .section-label{
+  display:inline-block;
+  padding:8px 18px;
+  border-radius:999px;
+  background:var(--green);
+  color:var(--leaf);
+  letter-spacing:3px;
+  font-size:12px;
+  margin-bottom:16px;
+}
+.social-head .section-title{
+  color:var(--green-dark);
+  margin-bottom:14px;
+}
+.social-head .section-title .ac{color:var(--green)}
+.social-head .section-desc{
+  color:var(--ink-soft);
+  font-size:15.5px;
+  line-height:1.9;
+  max-width:720px;
+  margin:0 auto;
+}
+.social-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:22px;
+}
+.social-card{
+  display:block;
+  text-decoration:none;
+  background:#fff;
+  border-radius:20px;
+  padding:30px 26px;
+  border-top:6px solid var(--green);
+  box-shadow:0 10px 28px rgba(31,53,32,0.08);
+  transition:all .28s ease;
+}
+.social-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 18px 36px rgba(31,53,32,0.14);
+}
+.social-card--gold{border-top:6px solid #c6a15b}
+.social-badge{
+  display:inline-block;
+  margin-bottom:16px;
+  font-size:11.5px;
+  letter-spacing:2px;
+  font-weight:700;
+  color:var(--gold);
+}
+.social-card h3{
+  font-size:22px;
+  color:var(--green-dark);
+  margin-bottom:12px;
+  line-height:1.4;
+}
+.social-card p{
+  font-size:14.5px;
+  color:var(--ink-soft);
+  line-height:1.85;
+  margin-bottom:18px;
+}
+.social-link{
+  font-size:14px;
+  font-weight:700;
+  color:var(--green);
+  display:inline-block;
+  position:relative;
+}
+.social-card:hover .social-link{color:var(--gold)}
+
+/* FOOTER */
+footer{background:#13211b;color:#a8b5a0;padding:70px 0 40px;text-align:center}
+.ft-logo{font-family:'Gowun Batang',serif;font-size:22px;color:#fff;margin-bottom:6px;font-weight:700}
+.ft-en{font-family:'Playfair Display',serif;font-style:italic;font-size:12px;letter-spacing:4px;color:var(--leaf);margin-bottom:28px}
+.ft-info{font-size:14px;line-height:1.85;margin-bottom:28px}
+.ft-info a{color:var(--leaf);text-decoration:none}
+.ft-slogan{
+  font-family:'Gowun Batang',serif;font-size:15px;line-height:1.85;
+  color:#c8d4be;margin-bottom:36px;padding:20px;
+  border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08);
+}
+.copyright{font-size:12px;color:#6a7a64;letter-spacing:1px}
+
+@media (max-width:900px){
+  section{padding:90px 0}
+  .section-title{font-size:30px}
+  .nav-menu{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:20px;border-bottom:1px solid var(--line);gap:20px}
+  .nav-menu.open{display:flex}
+  .burger{display:block}
+  .hero{padding:140px 0 90px}
+  .hero-title{font-size:30px}
+  .hero-sub{font-size:16px;margin-bottom:40px}
+  .hero-card{padding:38px 26px}
+  .hero-card-brand{font-size:28px}
+  .hero-card-sub{font-size:17px}
+  .hero-meta{flex-direction:column;gap:10px}
+  .sol-flow{grid-template-columns:1fr;gap:14px}
+  .sol-arrow{transform:rotate(90deg)}
+  .philo-pillars{grid-template-columns:1fr;gap:20px}
+  .timeline{padding:24px 20px}
+  .timeline::before{left:60px}
+  .tl-year{flex:0 0 70px;font-size:26px}
+  .level-row{grid-template-columns:60px 1fr;gap:14px}
+  .level-row .lv-goal{grid-column:1/-1;padding-top:8px;border-top:1px dashed var(--line)}
+  .compare{grid-template-columns:1fr}
+  .form-box{padding:30px 24px}
+  .process{flex-direction:column}
+  .ps-arrow{transform:rotate(90deg)}
+}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <nav class="nav">
+    <div class="logo">사고독서 리세움 <span class="en">LYCEUM</span></div>
+    <ul class="nav-menu">
+      <li><a href="#empathy">고민</a></li>
+      <li><a href="#solution">교육 철학</a></li>
+      <li><a href="#program">수업 안내</a></li>
+      <li><a href="#differ">차별점</a></li>
+      <li><a href="#founder">원장 소개</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="#apply" class="nav-cta">무료 레벨진단</a>
+    <button class="burger" onclick="toggleMenu()">☰</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">THINKING · READING · LYCEUM</div>
+      <h1 class="hero-title">
+        책은 읽는데,<br>
+        왜 시험만 보면 <span class="accent">무너질까요?</span>
+      </h1>
+      <p class="hero-sub">
+        무조건 많이 읽히는 것이 아니라,<br>
+        <strong>제대로 읽을 줄 아는 아이</strong>로 키웁니다.
+      </p>
+
+      <div class="hero-card">
+        <div class="hero-card-brand">사고독서 리세움</div>
+        <div class="hero-card-divider"><span></span><span class="dot"></span><span></span></div>
+        <div class="hero-card-sub">초·중등 사고문해력 전문 교육원</div>
+        <p class="hero-card-desc">한 권의 책으로 읽기 · 토론 · 글쓰기 · 어휘를 통합 훈련합니다.</p>
+      </div>
+
+      <div class="hero-badge">🌱 2026년 신규 개원 · 1기 정원 한정 모집</div>
+      <br>
+      <a href="#apply" class="hero-cta">무료 레벨진단 신청하기 <span class="arrow">→</span></a>
+
+      <div class="hero-meta">
+        <span><span class="dot"></span> 소요 40분</span>
+        <span><span class="dot"></span> 결과 리포트 무료 제공</span>
+        <span><span class="dot"></span> 등록 부담 없음</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="empathy" id="empathy">
+  <div class="container-narrow">
+    <div class="center">
+      <span class="section-label">PARENTS' CONCERN</span>
+      <h2 class="section-title">혹시 우리 아이도 <span class="ac">이런가요?</span></h2>
+      <div class="ornament"><span></span><span class="dot"></span><span></span></div>
+      <p class="section-desc">책장의 책은 가득한데, 왜 아이의 문해력은 제자리일까요?<br>학부모님들이 가장 많이 털어놓는 일곱 가지 이야기입니다.</p>
+    </div>
+
+    <div class="empathy-grid">
+      <div class="u-card empathy-card"><div class="empathy-check">✓</div><div class="empathy-text">책은 많이 읽는데, 독후감은 늘 <strong>"재미있었다"</strong>로 끝나요.</div></div>
+      <div class="u-card empathy-card"><div class="empathy-check">✓</div><div class="empathy-text">수학의 수식 문제는 푸는데, <strong>문장제만 나오면</strong> 이해를 못해요.</div></div>
+      <div class="u-card empathy-card"><div class="empathy-check">✓</div><div class="empathy-text">아는 내용인데도 <strong>서술형 점수</strong>가 잘 안 나와요.</div></div>
+      <div class="u-card empathy-card"><div class="empathy-check">✓</div><div class="empathy-text">발표 시간이 되면 <strong>입을 닫아버려요.</strong></div></div>
+      <div class="u-card empathy-card"><div class="empathy-check">✓</div><div class="empathy-text">어휘력이 부족한 것 같은데, <strong>어디서부터 채워줘야 할지</strong> 모르겠어요.</div></div>
+      <div class="u-card empathy-card"><div class="empathy-check">✓</div><div class="empathy-text">자기 생각을 묻는 질문에 <strong>"몰라요"</strong>라고 대답해요.</div></div>
+      <div class="u-card empathy-card"><div class="empathy-check">✓</div><div class="empathy-text">친구와 의견이 다르면 <strong>대화를 피하거나 화를 내요.</strong></div></div>
+    </div>
+
+    <div class="empathy-conclude">
+      <p>이 중 <strong>2가지 이상</strong>에 해당된다면,<br>문제는 '독서량'이 아니라 <strong>'읽는 방법'</strong>입니다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="solution" id="solution">
+  <div class="container-narrow">
+    <div class="center">
+      <span class="section-label">OUR PHILOSOPHY</span>
+      <h2 class="section-title">리세움은 <span class="ac">이렇게 가르칩니다</span></h2>
+      <div class="ornament"><span></span><span class="dot"></span><span></span></div>
+    </div>
+
+    <div class="sol-quote">
+      "감(感)이 아니라, <span class="em">개념으로</span> 읽습니다.<br>
+      정답이 아니라, <span class="em">생각하는 법</span>을 가르칩니다."
+    </div>
+
+    <div class="sol-flow">
+      <div class="u-card u-card--gold sol-step"><div class="num">01</div><h3>개념으로 읽기</h3><p>글의 구조와 핵심 개념어를 짚어 정확하게 이해합니다.</p></div>
+      <div class="sol-arrow">→</div>
+      <div class="u-card u-card--gold sol-step"><div class="num">02</div><h3>토론으로 넓히기</h3><p>다른 친구의 시각을 듣고 내 생각을 확장합니다.</p></div>
+      <div class="sol-arrow">→</div>
+      <div class="u-card u-card--gold sol-step"><div class="num">03</div><h3>글로 정리하기</h3><p>내 언어로 다시 써내며 사고를 완성합니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="program" id="program">
+  <div class="container">
+    <div class="center">
+      <span class="section-label on-dark">MONTHLY PROGRAM</span>
+      <h2 class="section-title on-dark">한 달, <span class="ac">이렇게 흘러갑니다</span></h2>
+      <div class="ornament on-dark"><span></span><span class="dot"></span><span></span></div>
+      <p class="section-desc on-dark">
+        주 1회 120분, 4주를 한 사이클로 운영합니다.<br>
+        홀수 주에는 <strong>읽는 방법</strong>을 배우고, 짝수 주에는 <strong>읽어 온 책에 직접 적용</strong>합니다.
+      </p>
+    </div>
+
+    <div class="prog-weeks">
+      <div class="u-card prog-week"><span class="tag">WEEK 1</span><h4>문학 개념독해</h4><p>이야기 글을 깊이 읽는 방법론을 배웁니다. 인물·사건·구조를 짚는 훈련.</p></div>
+      <div class="u-card u-card--gold prog-week apply"><span class="tag">WEEK 2 · APPLY</span><h4>7-Step ALL-IN-ONE</h4><p>읽어 온 문학 작품에 1주차 방법을 적용해 7단계로 깊이 들어갑니다.</p></div>
+      <div class="u-card prog-week"><span class="tag">WEEK 3</span><h4>비문학 개념독해</h4><p>설명문·논설문의 구조와 개념어를 분석하는 방법론을 배웁니다.</p></div>
+      <div class="u-card u-card--gold prog-week apply"><span class="tag">WEEK 4 · APPLY</span><h4>7-Step ALL-IN-ONE</h4><p>읽어 온 비문학 텍스트에 3주차 방법을 적용해 7단계로 정리합니다.</p></div>
+    </div>
+
+    <div class="prog-meta">
+      <div class="prog-meta-card"><div class="ico">📚</div><div class="lab">READING</div><div class="val">월 2권<br>필독 도서</div></div>
+      <div class="prog-meta-card"><div class="ico">✍️</div><div class="lab">WRITING</div><div class="val">수업 내<br>완성 원칙</div></div>
+      <div class="prog-meta-card"><div class="ico">👥</div><div class="lab">CLASS SIZE</div><div class="val">학년별<br>소수 정예</div></div>
+      <div class="prog-meta-card"><div class="ico">⏱</div><div class="lab">TIME</div><div class="val">주 1회<br>120분</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="seven">
+  <div class="container">
+    <div class="center">
+      <span class="section-label">7-STEP ALL-IN-ONE</span>
+      <h2 class="section-title">한 권의 책, <span class="ac">7개의 훈련</span></h2>
+      <div class="ornament"><span></span><span class="dot"></span><span></span></div>
+      <p class="section-desc">읽기에서 어휘까지, 흩어진 7가지 능력을 한 권의 책으로 통합합니다.</p>
+    </div>
+
+    <div class="seven-grid">
+      <div class="u-card seven-circle"><div class="stp-num">01</div><h4>구조 해체</h4><p>글의 뼈대를 시각화하며 큰 흐름을 파악합니다.</p><div class="stp-result">작품 이해 노트</div></div>
+      <div class="u-card seven-circle"><div class="stp-num">02</div><h4>개념 분석</h4><p>문학, 비문학의 개념어로 분석하여 읽습니다.</p><div class="stp-result">개념독해 활동지</div></div>
+      <div class="u-card seven-circle"><div class="stp-num">03</div><h4>문법 체화</h4><p>문법과 표현에 따른 독해 감각을 키웁니다.</p><div class="stp-result">문장 정리 노트</div></div>
+      <div class="u-card seven-circle"><div class="stp-num">04</div><h4>배경 확장</h4><p>주제 관련 문-사-철의 비문학 자료로 시야를 넓힙니다.</p><div class="stp-result">확장 자료집</div></div>
+      <div class="u-card seven-circle"><div class="stp-num">05</div><h4>변증법 토론</h4><p>찬반 양쪽 입장에서 주장을 세우고 근거를 바탕으로 토론합니다.</p><div class="stp-result">토론 근거 카드</div></div>
+      <div class="u-card seven-circle"><div class="stp-num">06</div><h4>삼색 글쓰기</h4><p>감성글, 논리글, 창의적인 글 등 다양한 문종으로 글을 씁니다.</p><div class="stp-result">글쓰기 결과물</div></div>
+      <div class="u-card seven-circle"><div class="stp-num">07</div><h4>어휘 자산화</h4><p>새로 배운 어휘, 속담, 사자성어, 관형구 등을 나만의 사전으로 축적합니다.</p><div class="stp-result">나만의 어휘창고</div></div>
+    </div>
+
+    <div class="seven-bonus">
+      <div class="lab">BONUS</div>
+      <h3>학기말 성장 리포트</h3>
+      <p>한 학기 동안의 변화를 정량·정성 모두 정리해 학부모님께 전달합니다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="differ" id="differ">
+  <div class="container-narrow">
+    <div class="center">
+      <span class="section-label on-dark">WHAT MAKES US DIFFERENT</span>
+      <h2 class="section-title on-dark">왜 리세움은 <span class="ac">찬반 토론</span>을<br>핵심에 두는가</h2>
+      <div class="ornament on-dark"><span></span><span class="dot"></span><span></span></div>
+    </div>
+
+    <p class="differ-quote">
+      토론은 '싸움'이 아니라,<br>
+      <strong>'다름을 받아들이는 마음'</strong>을 키우는 훈련입니다.
+    </p>
+
+    <div class="differ-story">
+      사실 젊은 시절에 찬반토론에 대해 다소 부정적이었으나, 깊이 연구하고 적용해 본 결과 중요한 사실을 깨달았습니다.<br><br>
+      <strong>어른들은 자신과 다른 의견을 '거절당함'으로 받아들이지만,<br>
+      아이들은 토론을 통해 '나와 다른 생각이 당연히 있을 수 있구나'를 자연스럽게 배웁니다.</strong><br><br>
+      이 발견이 리세움의 7-Step 안에 변증법 찬반 토론을 핵심으로 넣은 이유입니다.
+    </div>
+
+    <div class="differ-conclude">
+      <div class="differ-conclude-label">— Conclusion —</div>
+      <p>
+        인공지능이 정답을 대신 찾아주는 시대일수록, 진짜 경쟁력은 정답의 속도가 아니라 —
+        <span class="keywords">세상을 향한 관심, 스스로 생각하는 힘, 말과 글로 나누는 능력, 그리고 다름을 끌어안는 마음</span>
+        입니다. <strong>찬반 토론은 이 네 가지를 한 번에 길러주는, 가장 오래된 그리고 가장 확실한 훈련입니다.</strong>
+      </p>
+    </div>
+
+    <h3 class="differ-mini-title">토론을 통해 자라는 7가지 힘</h3>
+    <p class="differ-mini-desc">국어 점수 너머, 평생 가는 사고력의 기초를 다집니다.</p>
+
+    <div class="differ-skills">
+      <div class="differ-skill"><div class="ico">1</div><div class="txt">사회 전반에 대한 관심</div></div>
+      <div class="differ-skill"><div class="ico">2</div><div class="txt">정보를 찾는 서치 능력</div></div>
+      <div class="differ-skill"><div class="ico">3</div><div class="txt">생각을 구조화하는 힘</div></div>
+      <div class="differ-skill"><div class="ico">4</div><div class="txt">또렷하게 말하는 힘</div></div>
+      <div class="differ-skill"><div class="ico">5</div><div class="txt">끝까지 듣는 경청의 힘</div></div>
+      <div class="differ-skill"><div class="ico">6</div><div class="txt">핵심을 메모하는 힘</div></div>
+      <div class="differ-skill highlight"><div class="ico">★</div><div class="txt">다름을 받아들이는 열린 마음</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="philo" id="philo">
+  <div class="container-narrow">
+    <div class="center">
+      <span class="section-label">PHILOSOPHY</span>
+      <h2 class="section-title">2,400년 전 아리스토텔레스의 <span class="ac">교실로부터</span></h2>
+      <div class="ornament"><span></span><span class="dot"></span><span></span></div>
+    </div>
+
+    <p class="philo-lead">
+      <strong>리세움(LYCEUM)</strong>은 고대 그리스의 철학자 아리스토텔레스가 제자들과 함께 거닐며
+      질문하고 토론했던 학교,<br> <em>리케이온(Lykeion)</em>에서 따온 이름입니다.
+    </p>
+    <p class="philo-body">
+      2,400년 전 아리스토텔레스는 가르치지 않았습니다. <br>대신 <strong>질문하고, 함께 걸으며, 듣고, 답했습니다.</strong><br>
+      지식을 일방적으로 전달하는 것이 아니라, 아이 스스로 사고의 길을 찾도록 안내했습니다.<br><br>
+      <strong>리세움은 그 정신을 현대 인지언어학과 교육심리학의 언어로 다시 풀어낸 곳입니다.</strong>
+    </p>
+
+    <div class="philo-pillars">
+      <div class="u-card u-card--gold pillar">
+        <div class="pillar-icon">🧠</div>
+        <div class="pl-num">i</div>
+        <h4>인지언어학</h4>
+        <p>언어를 통해 사고가 어떻게 구조화되는지 연구하는 학문</p>
+      </div>
+      <div class="u-card u-card--gold pillar">
+        <div class="pillar-icon">💭</div>
+        <div class="pl-num">ii</div>
+        <h4>교육심리학</h4>
+        <p>학습자의 인지·정서 발달을 함께 고려한 수업 설계</p>
+      </div>
+      <div class="u-card u-card--gold pillar">
+        <div class="pillar-icon">📖</div>
+        <div class="pl-num">iii</div>
+        <h4>개념 기반 독해</h4>
+        <p>국어교육의 최신 흐름인 개념독해 모델 적용</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="founder" id="founder">
+  <div class="container-narrow">
+    <div class="center">
+      <span class="section-label">FOUNDER · OUR STORY</span>
+      <h2 class="section-title">30년의 교실에서, <span class="ac">리세움까지</span></h2>
+      <div class="section-subtitle">~ 맹자샘 이명자 원장의 이야기 ~</div>
+      <div class="ornament"><span></span><span class="dot"></span><span></span></div>
+    </div>
+
+    <div class="dr-card">
+      <div class="dr-photo">李</div>
+      <div class="dr-name">원장 이명자</div>
+      <div class="dr-alias">맹자샘</div>
+    </div>
+
+    <div class="u-card u-card--gold dr-quote">
+      "책을 많이 읽는 아이가 많이 아는 것이 아닙니다.<br>
+      <strong>읽는 법을 제대로 배운 아이가, 깊이 생각하게 됩니다.</strong>"
+    </div>
+
+    <div class="dr-body">
+      <h3>30년, 아이들 곁에서</h3>
+      <p>
+        30여 년간 초등 사립학교에서 아이들과 함께해 왔습니다. 교실에서 만난 수많은 아이들,
+        그리고 그 아이들을 위해 써 내려간 《쉬운 교과서》(사회·과학 3·4·5·6학년),
+        《초등 논술 영재 되기》, 《초등 토론 영재 되기》, 《문제중심학습 이론과 실제》,
+        《개념동화 시리즈》에 이르기까지. 모든 작업의 출발점은 한 가지 질문이었습니다.
+      </p>
+
+      <div class="dr-mini-quote">"어떻게 하면 아이들이 더 쉽고, 더 깊이 배울 수 있을까?"</div>
+
+      <h3>그리고, 리세움을 시작합니다</h3>
+      <p>
+        한 학교 안에서 만날 수 있는 아이는 한정되어 있습니다.
+        34년의 교실 경험 속에서 확인한 가능성 — <strong>한 권의 책으로 읽기 · 토론 · 글쓰기 · 어휘를 통합하는 수업</strong> —
+        을 더 많은 아이들에게 열어주고 싶어, 리세움을 시작합니다.
+      </p>
+
+      <h3>리세움에서의 약속</h3>
+      <p>
+        리세움의 교실에서는 아이들에게 <strong>정답</strong>을 가르치지 않습니다.
+        <strong>읽는 법, 생각하는 법, 자기 언어로 표현하는 법, 그리고 다른 사람의 생각을 존중하는 법</strong>을 가르칩니다.
+        리세움 1기의 모든 아이를, 30년 교실의 마지막 한 아이까지 그랬듯, 정성껏 가르치겠습니다.
+      </p>
+    </div>
+
+    <h3 class="tl-section-title">30년의 발자취</h3>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-year">30<small>년</small></div>
+        <div class="tl-body">
+          <h4>초등 사립학교 교사로</h4>
+          <p>
+            30여 년간 매일 아이들 곁에서 가르치고 함께 호흡해 왔습니다.<br><br>
+            사회과 문제중심학습을 적용하여 학생 중심의 수업을 했으며, 학급 담임 외에 인문사회영재학급 담임교사로 활동했습니다.
+            또 어린이들에게 독서, 토론, 논술 등을 지도하여 전국대회에서 독서토론지도 최우수 교사상을 여러 번 수상했습니다.<br>
+            자기주도학습 강사(인지영역), 서울시교육청 수업혁신 강사, 독서토론 및 영재교육 강사로도 활동했습니다.
+          </p>
+        </div>
+      </div>
+      <div class="tl-item highlight">
+        <div class="tl-year">2026</div>
+        <div class="tl-body">
+          <h4>사고독서 리세움 개원</h4>
+          <p>30여 년의 모든 경험을 한 권의 책에서 펼치는 7-Step 프로그램으로 압축했습니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="voice-title">아이들의 한마디</h3>
+    <div class="voices">
+      <div class="u-card voice-card">
+        <div class="voice-text">"선생님, 저는 이제 책을 읽고 나면 머리 속에 그림이 그려져요."</div>
+        <div class="voice-meta">— 초등 4학년, 글쓰기 수업</div>
+      </div>
+      <div class="u-card voice-card">
+        <div class="voice-text">"친구랑 의견이 달라도 화가 안 나요. 오히려 더 재밌어요."</div>
+        <div class="voice-meta">— 초등 6학년, 정책 토론 수업</div>
+      </div>
+      <div class="u-card voice-card">
+        <div class="voice-text">"선생님 책으로 공부하니까 시험이 안 무서워요."</div>
+        <div class="voice-meta">— 초등 5학년, 《쉬운 교과서》 특강</div>
+      </div>
+    </div>
+
+    <h3 class="cred-title">원장의 발자취</h3>
+    <div class="cred">
+      <div class="u-card cred-col">
+        <div class="cred-h">EDUCATION</div>
+        <ul>
+          <li>이화여자대학교 일반대학원 교육학 석사 (영재교육 전공)</li>
+        </ul>
+      </div>
+
+      <div class="u-card cred-col">
+        <div class="cred-h">CAREER</div>
+        <ul>
+          <li>초등 사립학교 30여 년 재직</li>
+          <li>《쉬운 교과서》 저자 특강 · 무료 온라인 독서수업 운영</li>
+          <li>학습코칭 · 독서토론 · 수업혁신 · 영재교육 강사</li>
+        </ul>
+      </div>
+
+      <div class="u-card cred-col">
+        <div class="cred-h">BOOKS</div>
+        <ul>
+          <li><a href="https://www.yes24.com/product/goods/146520967" target="_blank" rel="noopener" class="book-link">《쉬운 교과서 — 사회·과학》 (3·4·5·6학년)</a></li>
+          <li><a href="https://www.yes24.com/product/goods/11366776" target="_blank" rel="noopener" class="book-link">《초등 논술 영재 되기》</a></li>
+          <li><a href="https://www.yes24.com/product/goods/29249480" target="_blank" rel="noopener" class="book-link">《초등 토론 영재 되기》</a></li>
+          <li><a href="https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000011069373" target="_blank" rel="noopener" class="book-link">《문제중심학습(PBL) 이론과 실제》</a></li>
+          <li><a href="https://www.yes24.com/product/goods/96575961" target="_blank" rel="noopener" class="book-link">《학부모 입문서》</a></li>
+          <li>개념동화 시리즈</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="level" id="level">
+  <div class="container-narrow">
+    <div class="center">
+      <span class="section-label">LEVEL COURSE</span>
+      <h2 class="section-title">우리 아이의 <span class="ac">시작점 찾기</span></h2>
+      <div class="ornament"><span></span><span class="dot"></span><span></span></div>
+      <p class="section-desc">무료 레벨진단을 통해 정확한 시작점을 찾아드립니다.</p>
+    </div>
+
+    <div class="level-rows">
+      <div class="u-card u-card--gold level-row"><div class="lv-tag">L1</div><div class="lv-name">기초 다지기</div><div class="lv-goal">시각 자료와 구조화를 통해 글의 뼈대를 파악하는 단계</div></div>
+      <div class="u-card u-card--gold level-row"><div class="lv-tag">L2</div><div class="lv-name">개념 익히기</div><div class="lv-goal">핵심 개념어를 활용하여 글의 논리 구조를 정립하는 단계</div></div>
+      <div class="u-card u-card--gold level-row"><div class="lv-tag">L3</div><div class="lv-name">사고 확장</div><div class="lv-goal">변증법적 찬반 토론으로 다각적 시각을 형성하는 단계</div></div>
+      <div class="u-card u-card--gold level-row"><div class="lv-tag">L4</div><div class="lv-name">논증 글쓰기</div><div class="lv-goal">명확한 주장과 탄탄한 근거로 논리글을 완성하는 단계</div></div>
+      <div class="u-card u-card--gold level-row"><div class="lv-tag">L5</div><div class="lv-name">통합 사고</div><div class="lv-goal">주체적인 관점으로 세상을 해석하고 통찰하는 단계</div></div>
+    </div>
+
+    <p class="level-note">
+      💡 리세움은 <strong>6개월 이상의 꾸준한 훈련</strong>으로 사고의 근육을 만드는 프로그램입니다.
+    </p>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="container-narrow">
+    <div class="center">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">자주 묻는 <span class="ac">질문</span></h2>
+      <div class="ornament"><span></span><span class="dot"></span><span></span></div>
+      <p class="section-desc">학부모님들이 가장 많이 궁금해하시는 내용을 모았습니다.</p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">Q1. 한 반에 몇 명인가요?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>능력별, 소수 정예로 운영합니다.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Q2. 수업은 주 몇 회, 몇 시간인가요?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p><strong>주 1회, 회당 120분</strong>입니다. 심화반의 경우에는 상황에 따라 달라질 수 있습니다. 1주차는 문학 개념독해(방법론), 2주차는 7-Step ALL-IN-ONE(문학 적용), 3주차는 비문학 개념독해(방법론), 4주차는 7-Step ALL-IN-ONE(비문학 적용)으로 운영됩니다.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Q3. 책은 어떻게 정해지나요?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>2·4주차 수업과 연계된 도서를 <strong>한 달에 2권</strong> 읽어옵니다. 모든 책은 수업에서 깊이 함께 다루므로, "혼자 많이 읽기"의 부담은 없습니다.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Q4. 숙제가 많은가요?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>글쓰기와 어휘 정리는 <strong>원칙적으로 수업 시간 안에서 마무리</strong>합니다. 시간 내에 완성하지 못한 부분만 과제로 이어집니다. (필독 도서 읽기는 월 2권 별도)</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Q5. 찬반 토론이 아이를 너무 공격적으로 만들지 않을까요?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>리세움의 토론은 <strong>'이기는 법'이 아니라 '다양한 의견을 받아들이는 마음'</strong>을 키우는 훈련입니다. 이를 통해 아이들은 오히려 "나와 다른 생각이 있을 수 있구나"를 자연스럽게 배웠습니다.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Q6. 수강료는 어느 정도인가요?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>레벨과 과정에 따라 다르며, 상담 시 정확히 안내드립니다. (인근 독서논술 학원 평균 수준)</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Q7. 결석하면 보강이 되나요?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>사전 통보 시 보강 또는 자료 제공으로 진도를 맞춰드립니다.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Q8. 효과는 언제부터 보이나요?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>평균적으로 <strong>3개월</strong>에 글쓰기 구조가 잡히고, <strong>6개월</strong> 시점에 학교 서술형 점수와 발표력에서 변화가 나타나는 경우가 많습니다.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="apply" id="apply">
+  <div class="container-narrow">
+    <div class="center">
+      <span class="section-label on-dark">APPLY · 1ST CLASS</span>
+      <h2 class="section-title on-dark">리세움 1기,<br><span class="ac">함께 시작할 친구들</span>을 모집합니다</h2>
+      <div class="ornament on-dark"><span></span><span class="dot"></span><span></span></div>
+    </div>
+
+    <div class="process">
+      <div class="ps"><span class="ps-n">01</span>온라인 신청</div>
+      <div class="ps-arrow">›</div>
+      <div class="ps"><span class="ps-n">02</span>일정 안내</div>
+      <div class="ps-arrow">›</div>
+      <div class="ps"><span class="ps-n">03</span>레벨진단</div>
+      <div class="ps-arrow">›</div>
+      <div class="ps"><span class="ps-n">04</span>결과 리포트</div>
+      <div class="ps-arrow">›</div>
+      <div class="ps"><span class="ps-n">05</span>(희망 시) 상담</div>
+    </div>
+
+    <form class="form-box" id="levelForm" onsubmit="handleSubmit(event)">
+      <div class="fg">
+        <label>학생 이름 <span class="req">*</span></label>
+        <input type="text" name="student_name" required placeholder="예: 김리세">
+      </div>
+
+      <div class="fg">
+        <label>학생 학년 <span class="req">*</span></label>
+        <select name="grade" required>
+          <option value="">선택해주세요</option>
+          <option value="초등 3학년">초등 3학년</option>
+          <option value="초등 4학년">초등 4학년</option>
+          <option value="초등 5학년">초등 5학년</option>
+          <option value="초등 6학년">초등 6학년</option>
+          <option value="중학 1학년">중학 1학년</option>
+          <option value="중학 2학년">중학 2학년</option>
+        </select>
+      </div>
+
+      <div class="fg">
+        <label>재학 학교</label>
+        <input type="text" name="school" placeholder="예: ○○초등학교">
+      </div>
+
+      <div class="fg">
+        <label>보호자 성함 <span class="req">*</span></label>
+        <input type="text" name="parent_name" required placeholder="예: 김부모">
+      </div>
+
+      <div class="fg">
+        <label>보호자 연락처 <span class="req">*</span></label>
+        <input type="tel" name="phone" required placeholder="010-0000-0000">
+      </div>
+
+      <div class="fg">
+        <label>연락 가능 시간 <span class="req">*</span></label>
+        <select name="contact_time" required>
+          <option value="">선택해주세요</option>
+          <option value="오전 (9시~12시)">오전 (9시~12시)</option>
+          <option value="오후 (12시~18시)">오후 (12시~18시)</option>
+          <option value="저녁 (18시~21시)">저녁 (18시~21시)</option>
+          <option value="언제든지">언제든지</option>
+        </select>
+      </div>
+
+      <div class="fg">
+        <label>관심 사항 (복수 선택 가능)</label>
+        <div class="check-grid">
+          <label class="ck"><input type="checkbox" name="interest" value="무료 레벨진단"> 무료 레벨진단</label>
+          <label class="ck"><input type="checkbox" name="interest" value="1:1 상담"> 1:1 상담</label>
+          <label class="ck"><input type="checkbox" name="interest" value="1기 모집 안내"> 1기 모집 안내</label>
+          <label class="ck"><input type="checkbox" name="interest" value="아직 잘 모르겠어요"> 아직 잘 모르겠어요</label>
+        </div>
+      </div>
+
+      <div class="fg">
+        <label>문의 내용 <span class="req">*</span></label>
+        <textarea name="message" required placeholder="아이에 대해 상담받고 싶은 내용을 자유롭게 적어주세요."></textarea>
+      </div>
+
+      <div class="privacy">
+        <div class="pt">개인정보 수집 및 이용 동의</div>
+        사고독서 리세움은 상담 신청 및 안내를 위해 개인정보를 수집·이용합니다.<br>
+        · 수집 항목: 학생 이름, 학년, 학교, 보호자 성함, 연락처, 상담 내용<br>
+        · 보유 기간: 상담 종료 후 6개월 또는 삭제 요청 시 즉시 파기<br><br>
+        <label class="ck">
+          <input type="checkbox" name="privacy_agree" value="동의" required>
+          개인정보 수집 및 이용에 동의합니다. <span class="req">*</span>
+        </label>
+      </div>
+
+      <button type="submit" class="submit-btn">신청하기 →</button>
+    </form>
+  </div>
+</section>
+
+<section class="social-hub">
+  <div class="container-narrow">
+    <div class="social-head">
+      <div class="section-label">CONNECT</div>
+      <h2 class="section-title">리세움 <span class="ac">채널 바로가기</span></h2>
+      <p class="section-desc">
+        블로그, 네이버 프리미엄 콘텐츠, 인스타그램에서
+        리세움의 글과 생각, 수업의 결을 이어서 만나보실 수 있습니다.
+      </p>
+    </div>
+
+    <div class="social-grid">
+      <a href="https://blog.naver.com/lmajo2000" target="_blank" rel="noopener" class="social-card">
+        <div class="social-badge">BLOG</div>
+        <h3>네이버 블로그</h3>
+        <p>리세움의 생각과 교육 이야기를 차분히 읽어보실 수 있는 공간입니다.</p>
+        <span class="social-link">바로가기 ↗</span>
+      </a>
+
+      <a href="https://naver.me/5PVPHzlI" target="_blank" rel="noopener" class="social-card social-card--gold">
+        <div class="social-badge">PREMIUM</div>
+        <h3>네이버 프리미엄 콘텐츠</h3>
+        <p>조금 더 깊이 있는 글과 전문적인 콘텐츠를 모아 둔 채널입니다.</p>
+        <span class="social-link">바로가기 ↗</span>
+      </a>
+
+      <a href="https://www.instagram.com/ja._study/" target="_blank" rel="noopener" class="social-card">
+        <div class="social-badge">INSTAGRAM</div>
+        <h3>인스타그램</h3>
+        <p>리세움의 분위기와 짧은 기록들을 이미지 중심으로 보실 수 있습니다.</p>
+        <span class="social-link">바로가기 ↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container-narrow">
+    <div class="ft-logo">사고독서 리세움</div>
+    <div class="ft-en">THINKING · READING · LYCEUM</div>
+    <div class="ft-info">
+      서울 서대문구 명지대길 130, 충암문화스포츠센터 6층<br>
+      <a href="tel:010-3396-3710">010-3396-3710</a> · 원장 이명자
+    </div>
+    <div class="ft-slogan">
+      "읽는 법을 배우면, 생각하는 힘이 자랍니다.<br>
+      그리고 다른 사람의 생각을 들을 줄 알게 됩니다."
+    </div>
+    <div class="copyright">© 2026 사고독서 리세움. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('scroll', () => {
+    document.getElementById('header').classList.toggle('scrolled', window.scrollY > 20);
+  });
+
+  function toggleMenu() {
+    document.querySelector('.nav-menu').classList.toggle('open');
+  }
+
+  document.querySelectorAll('.nav-menu a').forEach(a => {
+    a.addEventListener('click', () => {
+      document.querySelector('.nav-menu').classList.remove('open');
+    });
+  });
+
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => q.parentElement.classList.toggle('active'));
+  });
+
+  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbybpzgTAOT48jnlaIpdwM6gJBBkLsdcUT1HbofRgeehFijXBI_QiVKWzVhaFaH_Q8Lrvg/exec';
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const submitBtn = form.querySelector('.submit-btn');
+    const formData = new FormData(form);
+
+    formData.append('page_url', window.location.href);
+    formData.append('user_agent', navigator.userAgent);
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = '접수 중...';
+
+    fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST',
+      body: formData,
+      mode: 'no-cors'
+    })
+    .then(() => {
+      alert('무료 레벨진단 신청이 접수되었습니다.\n\n빠른 시일 내에 연락드리겠습니다.');
+      form.reset();
+    })
+    .catch(() => {
+      alert('전송 중 문제가 발생했습니다.\n잠시 후 다시 시도해주세요.');
+    })
+    .finally(() => {
+      submitBtn.disabled = false;
+      submitBtn.textContent = '신청하기 →';
+    });
+  }
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
